@@ -81,8 +81,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
       // Load the socket.io library above, then connect to the server.
-      // Because the socket.io server is being run on the same server as your 
-      // Express instance, you can connect() without any arguments.
+      // Because the socket.io server is being run on the same server as your Express instance, you can connect() without any arguments.
       var socket = io.connect();
       // When 'new_tweet' events are fired, do something with the packaged tweet
       socket.on('new_tweet', function (tweet) { 
